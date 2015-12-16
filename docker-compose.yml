@@ -1,12 +1,12 @@
 elasticsearch:
-  build: .
+  build: ./docker
   dockerfile: Dockerfile-elasticsearch
   container_name: qori_qollqe_elasticsearch
   volumes:
-    - ./.volumes/data:/usr/share/elasticsearch/data
+    - ./docker/.volumes/data:/usr/share/elasticsearch/data
 
 kibana:
-  build: .
+  build: ./docker
   dockerfile: Dockerfile-kibana
   container_name: qori_qollqe_kibana
   ports:

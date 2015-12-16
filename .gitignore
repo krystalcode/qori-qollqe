@@ -1,5 +1,5 @@
 # Ignore ElasticSearch data volume.
-/.docker/.volumes/data
+/docker/.volumes/data
 
 # Ignore Haskell Stack development files.
 /.stack-work
